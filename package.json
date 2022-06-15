@@ -1,0 +1,16 @@
+{
+  "name": "com.tiercelfoundry.rvo2-unity",
+  "version": "1.0.0",
+  "displayName": "RVO2-Unity",
+  "description": "An implementation of RVO2 for Unity. Implements the published UNC project at https://github.com/snape/RVO2-CS. Code by warmtrue from the repo https://github.com/warmtrue/RVO2-Unity; licensed under the Apache 2.0 License",
+  "unity": "2017.1",
+  "unityRelease": "0b5",
+  "documentationUrl": "https://github.com/warmtrue/RVO2-Unity",
+  "licensesUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+  "author": {
+    "name": "warmtrue",
+    "email": "warmtrue@126.com",
+    "url": "https://github.com/warmtrue"
+  },
+  "type": "library"
+}
