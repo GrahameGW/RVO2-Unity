@@ -5,12 +5,12 @@
   "description": "An implementation of RVO2 for Unity. Implements the published UNC project at https://github.com/snape/RVO2-CS. Code by warmtrue from the repo https://github.com/warmtrue/RVO2-Unity; licensed under the Apache 2.0 License",
   "unity": "2017.1",
   "unityRelease": "0b5",
-  "documentationUrl": "https://github.com/warmtrue/RVO2-Unity",
+  "documentationUrl": "https://github.com/GrahameGW/RVO2-Unity",
   "licensesUrl": "https://www.apache.org/licenses/LICENSE-2.0",
   "author": {
-    "name": "warmtrue",
-    "email": "warmtrue@126.com",
-    "url": "https://github.com/warmtrue"
+    "name": "GrahameGW",
+    "email": "grahame@grahamewatt.com",
+    "url": "https://github.com/GrahameGW"
   },
   "type": "library"
 }
