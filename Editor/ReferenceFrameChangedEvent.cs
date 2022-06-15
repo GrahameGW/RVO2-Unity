@@ -2,7 +2,6 @@
 using UnityEngine;
 using System.Collections;
 
-
 namespace TiercelFoundry.RVO2
 {
 	[CustomEditor(typeof(RVOManager))]
