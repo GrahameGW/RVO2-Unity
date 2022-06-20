@@ -46,6 +46,14 @@ namespace TiercelFoundry.RVO2
                 .OrderBy(s => Vector2.Angle(p0, s - center) + s.X() > center.X() ? System.MathF.PI : 0f) // ccw
                 .ToList();
         }
+
+        private void OnGizmosSelected() {
+            Gizmos.Color = Color.Cyan;
+            for (int i = 1; i < vertices.Count; i++) {
+                Gizmos.DrawLine(vertices[i - 1], vertices[i])
+            }
+            Gizmos.DrawLine(vertices[vertices.Count - 1], vertices[0]);
+        }
     }
 }
 
