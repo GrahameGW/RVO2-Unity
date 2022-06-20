@@ -47,7 +47,7 @@ namespace TiercelFoundry.RVO2
                 .ToList();
         }
 
-        private void OnGizmosSelected() 
+        private void OnDrawGizmosSelected() 
         {
             Gizmos.color = Color.cyan;
             for (int i = 1; i < vertices.Count; i++) 
