@@ -194,7 +194,7 @@ namespace TiercelFoundry.RVO2
             return new Vector2(-vector.x_, -vector.y_);
         }
 
-        public static Vector2 Angle(Vector2 a, Vector2 b)
+        public static float Angle(Vector2 a, Vector2 b)
         {
             var ax = a.X();
             var bx = b.X();
