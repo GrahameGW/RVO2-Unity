@@ -3,7 +3,14 @@
 	"references": [
 		"TiercelFoundry.RVO2-Unity"
 	],
-	"excludePlatforms": [
+    "includePlatforms": [
         "Editor"
     ],
+	"excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+	"noEngineReferences": false
 }
