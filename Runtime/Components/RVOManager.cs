@@ -16,6 +16,7 @@ namespace TiercelFoundry.RVO2
         private readonly List<int> obstacles = new();
         private readonly Queue<RVOAgent> agentsToAdd = new();
 
+        [HideInInspector]
         public CoordFrame referenceFrame;
         public delegate Vector2 ConvertVector3(Vector3 vector3);
         public ConvertVector3 Convert;

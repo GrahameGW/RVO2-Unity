@@ -7,8 +7,9 @@ namespace TiercelFoundry.RVO2
 	[CustomEditor(typeof(RVOManager))]
 	public class ReferenceFrameChangedEvent : Editor
 	{
-        public void OnGUI()
+        public override void OnInspectorGUI()
         {
+            DrawDefaultInspector();
             RVOManager targ = target as RVOManager;
             EditorGUILayout.BeginHorizontal();
             EditorGUILayout.PrefixLabel("Reference Frame");
