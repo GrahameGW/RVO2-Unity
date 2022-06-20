@@ -10,7 +10,7 @@ namespace TiercelFoundry.RVO2
         [SerializeField] RVOManager manager;
         [SerializeField] List<Vector3> vertices;
 
-        private int obstacleId;
+        private int obstacleId = -1;
 
         private void OnEnable()
         {
@@ -25,7 +25,8 @@ namespace TiercelFoundry.RVO2
                 }
             }
 
-            if (obstacleId != null) {
+            if (obstacleId != -1) 
+            {
                 obstacleId = manager.AddObstacle(SortConcave(vertices));
             }
         }
@@ -34,7 +35,7 @@ namespace TiercelFoundry.RVO2
         {
             obstacleId = manager.AddObstacle(SortConcave(vertices));
         }
-        
+
         private void OnDisable()
         {
             if (manager != null)
