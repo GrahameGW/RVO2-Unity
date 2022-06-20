@@ -24,8 +24,17 @@ namespace TiercelFoundry.RVO2
                     return;
                 }
             }
+
+            if (obstacleId != null) {
+                obstacleId = manager.AddObstacle(SortConcave(vertices));
+            }
+        }
+
+        private void Start() 
+        {
             obstacleId = manager.AddObstacle(SortConcave(vertices));
         }
+        
         private void OnDisable()
         {
             if (manager != null)
