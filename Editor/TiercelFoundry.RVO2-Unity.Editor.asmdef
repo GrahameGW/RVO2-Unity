@@ -2,5 +2,8 @@
 	"name": "TiercelFoundry.RVO2-Unity.Editor",
 	"references": [
 		"TiercelFoundry.RVO2-Unity"
-	]
+	],
+	"excludePlatforms": [
+        "Editor"
+    ],
 }
