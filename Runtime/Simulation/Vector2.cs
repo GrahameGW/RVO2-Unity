@@ -42,6 +42,7 @@ namespace TiercelFoundry.RVO2
         internal float x_;
         internal float y_;
 
+        public static Vector2 Up => new Vector2(0f, 1f);
         /**
          * <summary>Constructs and initializes a two-dimensional vector from the
          * specified xy-coordinates.</summary>
@@ -191,6 +192,19 @@ namespace TiercelFoundry.RVO2
         public static Vector2 operator -(Vector2 vector)
         {
             return new Vector2(-vector.x_, -vector.y_);
+        }
+
+        public static Vector2 Angle(Vector2 a, Vector2 b)
+        {
+            var ax = a.X();
+            var bx = b.X();
+            var ay = a.Y();
+            var by = b.Y();
+
+            var dot = ax * bx + ay * by;
+            var magA = RVOMath.Sqrt(ax * ax + ay * by);
+            var magB = RVOMath.Sqrt(bx * bx + by * by);
+            return 1f / System.MathF.Cos(dot / (magA * magB));
         }
     }
 }

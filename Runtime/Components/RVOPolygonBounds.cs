@@ -43,7 +43,7 @@ namespace TiercelFoundry.RVO2
             var p0 = Vector2.Up - center;
 
             return vertices.Select(v => manager.Convert(v))
-                .OrderBy(s => Vector2.Angle(p0, s - center) + s.X() > center.X() ? System.MathF.Pi : 0f) // ccw
+                .OrderBy(s => Vector2.Angle(p0, s - center) + s.X() > center.X() ? System.MathF.PI : 0f) // ccw
                 .ToList();
         }
     }

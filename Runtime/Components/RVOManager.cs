@@ -13,6 +13,7 @@ namespace TiercelFoundry.RVO2
         //private readonly Dictionary<int, RVOAgent> agents = new();
         private readonly List<RVOAgent> agents = new();
         private readonly List<RVOAgent> inactive = new();
+        private readonly List<int> obstacles = new();
         private readonly Queue<RVOAgent> agentsToAdd = new();
 
         public CoordFrame referenceFrame;
@@ -114,6 +115,21 @@ namespace TiercelFoundry.RVO2
             Simulator.DelAgent(agent.sid);
         }
 
+        public int AddObstacle(List<Vector2> vertices)
+        {
+            int id = Simulator.AddObstacle(vertices);
+            obstacles.Add(id);
+            return id;
+        }
+
+        public void RemoveObstacle(int id)
+        {
+            if (obstacles.Contains(id))
+            {
+                obstacles.Remove(id);
+                Simulator.RemoveObstacle(id);
+            }
+        }
         public void DisableRVO()
         {
             foreach (var agent in agents)
@@ -147,7 +163,5 @@ namespace TiercelFoundry.RVO2
             };
         }
     }
-
-
 }
 

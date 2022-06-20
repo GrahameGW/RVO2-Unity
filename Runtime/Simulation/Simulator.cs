@@ -312,6 +312,14 @@ namespace TiercelFoundry.RVO2
             return obstacleNo;
         }
 
+        public void RemoveObstacle(int id)
+        {
+            var obs = obstacles_.FirstOrDefault(o => o.id_ == id);
+            if (obs != default)
+            {
+                obstacles_.Remove(obs);
+            }
+        }
         /**
          * <summary>Clears the simulation.</summary>
          */
